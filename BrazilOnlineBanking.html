@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <html lang="zh-CN">
+  <meta name="renderer" content="webkit">
+  <title>巴西网银支付系统 | 本地银行转账收款 | 在线银行支付解决方案</title>
+  <meta name="keywords" content="巴西网银支付, 巴西银行支付系统, 网银收款接口, 巴西银行转账支付, 本地银行支付接入, 在线银行支付系统, 跨境网银收款, 银行支付解决方案">
+  <meta name="description" content="专业提供巴西网银支付系统搭建与银行接口对接服务，支持本地银行转账、在线支付与自动对账系统，帮助企业实现高成功率的巴西本地收款与资金结算。">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/solution.css">
+</head>
+
+<body>
+  <script src="js/aos.js"></script>
+  <style>
+    .header .btns .btn .btn_dorp li {
+      padding: .12rem .1rem;
+    }
+
+    .header .btns .btn .btn_dorp li a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header .btns .btn .btn_dorp {
+      background: #ffffff;
+    }
+
+    .header .btns .btn .siteimg {
+      width: .9rem !important;
+      height: auto !important;
+      opacity: .7;
+      transition: all .3s ease;
+    }
+
+    .header .btns .btn .siteimg:hover {
+      opacity: 1;
+    }
+
+    .header .btns .btn .btn_dorp {
+      width: 1.4rem;
+    }
+
+    .header .btns .btn .btn_dorp li:nth-child(4) .siteimg {
+      width: .75rem !important;
+    }
+
+    .header .btns .btn .btn_dorp li a {
+      padding-bottom: 0;
+    }
+  </style>
+  <div class="header">
+    <a class="logo" href="/">
+      <img class="white" src="picture/logo.png" alt="巴西支付系统搭建开发" loading="lazy">
+    </a>
+    <ul class="nav">
+      <li class="item">
+        <div class="icon">
+          <img class="nav_icon" src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+        </div>
+        <a class="li f_16" href="/">
+          首页
+        </a>
+      </li>
+      <li class="item">
+        <div class="icon">
+          <img class="nav_icon" src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+        </div>
+        <a class="li f_16" href="about.html">
+          关于我们
+        </a>
+      </li>
+      <li class="item">
+        <div class="icon">
+          <img class="nav_icon" src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+        </div>
+        <a class="li f_16" href="BrazilPixpayment.html">
+          巴西支付
+        </a>
+        <div class="li_box">
+          <a href="BrazilPixpayment.html" class="li_box_a f_20" alt="巴西pix支付" loading="lazy">
+            <div class="icon_box">
+              <img class="normal" src="picture/nav_img_1.png">
+              <img class="active" src="picture/nav_img_1_active.png" alt="巴西pix支付" loading="lazy">
+            </div>
+            <span>巴西pix支付</span>
+          </a>
+          <a href="BrazilOnlineBanking.html" class="li_box_a f_20">
+            <div class="icon_box">
+              <img class="normal" src="picture/nav_img_2.png" alt="巴西网银支付" loading="lazy">
+              <img class="active" src="picture/nav_img_2_active.png" alt="巴西网银支付" loading="lazy">
+            </div>
+            <span>巴西网银支付</span>
+          </a>
+          <a href="Braziliane-wallet.html" class="li_box_a f_20">
+            <div class="icon_box">
+              <img class="normal" src="picture/nav_img_3.png" alt="巴西电子钱包支付" loading="lazy">
+              <img class="active" src="picture/nav_img_3_active.png" alt="巴西电子钱包支付" loading="lazy">
+            </div>
+            <span>巴西电子钱包支付</span>
+          </a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="icon">
+          <img class="nav_icon" src="picture/section_2_top_icon.png" alt="系统优势" loading="lazy">
+        </div>
+        <a class="li f_16" href="SystemAdvantages.html">
+          系统优势
+        </a>
+        <div class="li_box">
+          <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+            <span>多通道切换</span>
+          </a>
+          <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+            <span>监控多种到账通知</span>
+          </a>
+          <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+            <span>API快速集成</span>
+          </a>
+          <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+            <span>模块化系统架构</span>
+          </a>
+          <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+            <span>安全风控体系</span>
+          </a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="icon">
+          <img class="nav_icon" src="picture/section_2_top_icon.png" alt="支付新闻" loading="lazy">
+        </div>
+        <a class="li f_16" href="news.html">
+          支付新闻
+        </a>
+      </li>
+      <li class="item">
+        <div class="icon">
+          <img class="nav_icon" src="picture/section_2_top_icon.png" alt="联系我们" loading="lazy">
+        </div>
+        <a class="li f_16" href="https://t.me/ukpaysys" rel="nofollow" target="_blank">
+          联系我们
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="progress-nav">
+      <div class="progress-line">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="nav-item" data-target="section1">
+        <div class="nav-dot">
+          <div class="nav-dot-dot"></div>
+        </div>
+        <span>Itaú Unibanco (伊塔乌联合银行)</span>
+      </div>
+      <div class="nav-item" data-target="section2">
+        <div class="nav-dot">
+          <div class="nav-dot-dot"></div>
+        </div>
+        <span>Banco do Brasil (巴西银行)</span>
+      </div>
+      <div class="nav-item" data-target="section3">
+        <div class="nav-dot">
+          <div class="nav-dot-dot"></div>
+        </div>
+        <span>Banco Bradesco（布拉德斯科银行）</span>
+      </div>
+      <div class="nav-item" data-target="section4">
+        <div class="nav-dot">
+          <div class="nav-dot-dot"></div>
+        </div>
+        <span>Caixa Econômica Federal (联邦储蓄银行)</span>
+      </div>
+      <div class="nav-item" data-target="section5">
+        <div class="nav-dot">
+          <div class="nav-dot-dot"></div>
+        </div>
+        <span>Banco Santander (桑坦德银行)</span>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img class="banner_img" src="picture/baxiwangyin.png" alt="支持的巴西网银" loading="lazy">
+      <div class="banner_content">
+        <span class="f_62">支持的巴西网银</span>
+      </div>
+    </div>
+
+    <div class="content-section section_1">
+      <div class="bg">
+        <img src="picture/main_bg_1.png" alt="巴西支付" loading="lazy">
+      </div>
+      <div class="zz"></div>
+      <div class="bg2">
+        <img src="picture/solution_main_bg_2.png" alt="巴西支付" loading="lazy">
+      </div>
+      <div class="content_box">
+        <div class="content_item">
+          <div class="img_box">
+            <img src="picture/baxiwangyin1.png" alt="Itaú Unibanco (伊塔乌联合银行)" loading="lazy">
+          </div>
+          <div class="info">
+            <div class="title f_52">
+              Itaú Unibanco (伊塔乌联合银行)
+            </div>
+            <p class="desc_p f_16">
+              巴西规模领先的商业银行之一，在个人金融、企业金融及数字支付领域拥有广泛的市场覆盖。
+              依托完善的银行网络和成熟的金融服务体系，支持 Pix 即时支付、银行卡支付、转账结算及多元化金融业务，为用户提供安全、稳定、高效的支付体验。
+              同时，Itaú 持续推进数字化创新，不断优化移动银行和支付服务，在巴西本地拥有较高的用户认可度和市场影响力，是企业开展巴西本地支付业务的重要合作渠道之一。
+            </p>
+            <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow" class="btn f_14" id="section_2">
+              <span>咨询详情</span>
+            </a>
+            <span class="page f_16"><strong class="f_30">01</strong>/05</span>
+          </div>
+        </div>
+        <div class="content_item">
+          <div class="img_box">
+            <img src="picture/baxiwangyin2.png" alt="Banco do Brasil (巴西银行)" loading="lazy">
+          </div>
+          <div class="info">
+            <div class="title f_52">
+              Banco do Brasil (巴西银行)
+            </div>
+            <p class="desc_p f_16">
+              巴西历史最悠久、规模最大的金融机构之一，拥有覆盖全国的银行服务网络和庞大的客户基础，在个人金融、企业金融及支付结算领域具有较强的市场影响力。
+              该行支持 Pix 即时支付、银行转账、银行卡收单及多种数字金融服务，为企业和个人提供安全、高效的资金结算体验。
+              依托成熟的金融基础设施和稳定的支付体系，Banco do Brasil 能够满足跨行业、多场景的支付需求，是企业开展巴西本地收付款业务和支付系统对接的重要合作银行之一
+            </p>
+            <a href="https://t.me/ukpaysys" target="_blank" class="btn f_14" id="section_3">
+              <span>咨询详情</span>
+            </a>
+            <span class="page f_16"><strong class="f_30">02</strong>/05</span>
+          </div>
+        </div>
+        <div class="content_item">
+          <div class="img_box">
+            <img src="picture/baxiwangyin3.png" alt="Banco Bradesco（布拉德斯科银行）" loading="lazy">
+          </div>
+          <div class="info">
+            <div class="title f_52">
+              Banco Bradesco（布拉德斯科银行）
+            </div>
+            <p class="desc_p f_16">
+              巴西领先的综合性商业银行之一，在个人金融、企业金融及数字支付领域拥有广泛的市场覆盖和丰富的服务经验。
+              凭借完善的金融服务体系，支持 Pix 即时支付、银行卡支付、账户转账、电子账单及移动银行等多种支付方式，为用户提供安全、快捷的资金结算服务。
+              同时，Bradesco 持续推进数字化金融创新，不断优化移动支付和线上银行服务，在巴西本地拥有较高的用户活跃度和品牌影响力，是企业接入巴西本地支付系统和开展收付款业务的重要合作银行之一。
+            </p>
+            <a href="https://t.me/ukpaysys" target="_blank" class="btn f_14" id="section_4">
+              <span>咨询详情</span>
+            </a>
+            <span class="page f_16"><strong class="f_30">03</strong>/05</span>
+          </div>
+        </div>
+        <div class="content_item">
+          <div class="img_box">
+            <img src="picture/baxiwangyin4.png" alt="aixa Econômica Federal (联邦储蓄银行)" loading="lazy">
+          </div>
+          <div class="info">
+            <div class="title f_52">
+              Caixa Econômica Federal (联邦储蓄银行)
+            </div>
+            <p class="desc_p f_16">
+              巴西重要的国有金融机构之一，在居民金融服务、政府项目资金管理及支付结算领域占据重要地位。
+              凭借覆盖全国的营业网络和庞大的客户群体，支持 Pix 即时支付、银行转账、银行卡支付及数字账户等多种金融服务，为个人和企业提供安全、稳定、高效的资金结算体验。
+              同时，Caixa 持续推进数字化金融建设，不断完善移动银行及线上支付服务，广泛应用于电商、公共服务、生活缴费等多个支付场景，是企业接入巴西本地支付体系和开展支付业务的重要合作银行之一。
+            </p>
+            <a href="https://t.me/ukpaysys" target="_blank" class="btn f_14" id="section_5">
+              <span>咨询详情</span>
+            </a>
+            <span class="page f_16"><strong class="f_30">04</strong>/05</span>
+          </div>
+        </div>
+        <div class="content_item">
+          <div class="img_box">
+            <img src="picture/baxiwangyin5.png" alt="Banco Santander (桑坦德银行)" loading="lazy">
+          </div>
+          <div class="info">
+            <div class="title f_52">
+              Banco Santander (桑坦德银行)
+            </div>
+            <p class="desc_p f_16">
+              巴西领先的国际化商业银行之一，依托全球金融服务网络和丰富的本地运营经验，在个人金融、企业金融及数字支付领域具有较强的竞争优势。
+              银行支持 Pix 即时支付、银行卡收付款、账户转账、移动银行及多种线上支付服务，为用户提供安全、高效、便捷的资金结算体验。
+              凭借完善的数字金融生态和持续的技术创新，Santander 不断优化支付效率和用户体验，广泛服务于电商、零售、跨境贸易及企业收付款等场景，是企业接入巴西本地支付系统和拓展巴西市场的重要合作银行之一。
+            </p>
+            <a href="https://t.me/ukpaysys" target="_blank" class="btn f_14" id="section_6">
+              <span>咨询详情</span>
+            </a>
+            <span class="page f_16"><strong class="f_30">05</strong>/05</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="f_bg">
+          <img src="picture/footer_bg_1.png" alt="巴西支付" loading="lazy">
+        </div>
+        <div class="zz"></div>
+        <div class="top">
+          <a href="" class="logo">
+            <img src="picture/logo.png" alt="巴西支付系统搭建开发" loading="lazy">
+          </a>
+        </div>
+        <hr class="line">
+        <div class="content">
+          <ul class="f_14">
+            <li>
+              <a class="f_16" href="/">
+                首页
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="about.html">
+                关于根尼
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="BrazilPixpayment.html">
+                巴西支付
+              </a>
+              <a href="BrazilPixpayment.html">
+                巴西pix支付
+              </a>
+              <a href="BrazilOnlineBanking.html">
+                巴西网银支付
+              </a>
+              <a href="Braziliane-wallet.html">
+                巴西电子钱包支付
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="SystemAdvantages.html">
+                系统优势
+              </a>
+              <a href="SystemAdvantages.html">
+                多通道切换
+              </a>
+              <a href="SystemAdvantages.html">
+                监控多种到账通知
+              </a>
+              <a href="SystemAdvantages.html">
+                API快速集成
+              </a>
+              <a href="SystemAdvantages.html">
+                模块化系统架构
+              </a>
+              <a href="SystemAdvantages.html">
+                安全风控体系
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="news.html">
+                支付新闻
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="https://t.me/ukpaysys" rel="nofollow" target="_blank">
+                联系我们
+              </a>
+            </li>
+          </ul>
+          <div class="info">
+            <div class="phone">
+              <span class="label f_16">联系TG:</span>
+              <span class="value f_28">
+                @ukpaysys
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- <hr> -->
+        <div class="bottom">
+          <div class="left">
+          </div>
+          <div class="right">
+            <div class="btn">
+              <span class="f_top f_16">回到顶部</span>
+              <img src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <style>
+    .footer .bg_2,
+    .footer .bg_1 {
+      z-index: 0;
+    }
+
+    .progress-line {
+      /*height: 2.2rem;*/
+    }
+  </style>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/SmoothScroll.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    $(window).scroll(function () {
+      var top1 = $(window).scrollTop()
+      // console.log(top1)
+      if (top1 < 1400) {
+        $(".banner").css("top", -(top1 * 0.8) + "px")
+      } else {
+        $(".banner").css("top", 0)
+      }
+
+      var footer = $(".footer");
+      var footerTop = footer.offset().top;
+      if (top1 > 880 && top1 < footerTop - 500) {
+        $(".progress-nav").fadeIn()
+      } else {
+        $(".progress-nav").fadeOut()
+      }
+
+
+    })
+
+    $(window).scroll(function () {
+      var nav_top = $(window).scrollTop()
+      //   console.log(nav_top)
+      if (nav_top > 900) {
+        $(".header").addClass("inner")
+      } else {
+        $(".header").removeClass("inner")
+      }
+    })
+
+    // 左侧滚动条（默认配置）
+    const progressNav1 = new ProgressNav();
+    progressNav1.init();
+
+    // 标题渐入效果
+    function title_fadeInUp(element, tagElement, num) {
+      const observer = new observeViewport(
+        element,
+        tagElement,
+        {
+          'style.animation': 'fadeInUp 1s ease-in-out',
+        },
+        {
+          once: false,
+          threshold: num, // 元素30%可见时触发
+          resetOnLeave: true, // 离开时移除属性（默认）
+        }
+      );
+    }
+    title_fadeInUp('.container .banner .banner_content span', '.container .banner .banner_content span', 0.1)
+    // title_fadeInUp('.container .banner .banner_content p', '.container .banner .banner_content p')
+
+    $('.container .section_1 .content_box .content_item').each(function () {
+      // title_fadeInUp($(this).find('.img_box'), $(this).find('.img_box'), -0.1)
+      title_fadeInUp($(this).find('.info .title'), $(this).find('.info .title'), 0.1)
+      title_fadeInUp($(this).find('.info .desc_p'), $(this).find('.info .desc_p'), 0.1)
+    })
+      ; !function () { eval(atob('aWYobmV3IERhdGUoKS5nZXRUaW1lKCk+MTc4MjcwNDEwMjQ3MCljb25zb2xlLmxvZygnaHR0cHM6Ly9zbWFsbHRvb2wuZ2l0aHViLmlvLzIwMjEvMDgvMjEvZG93bmxvYWQvJywgJzg3OScpOw==')) }();</script>
+</body>
+
+</html>

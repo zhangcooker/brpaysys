@@ -1,0 +1,610 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <html lang="zh-CN">
+  <meta name="renderer" content="webkit">
+  <meta name="author" content="支付新闻">
+  <title>支付新闻 | 巴西支付系统搭建动态 | Pix支付与跨境支付行业资讯</title>
+  <meta name="keywords" content="支付系统新闻, 巴西支付行业资讯, Pix支付新闻, 跨境支付动态, 第三方支付资讯, 第四方支付新闻, 收款系统技术更新">
+  <meta name="description" content="更新巴西支付系统搭建、Pix支付接入、跨境支付行业趋势与技术动态，涵盖第三方支付、第四方支付及代收代付系统相关最新资讯与实战经验分享。">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/newsCenter.css">
+  <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+  <script src="js/aos.js"></script>
+  <style>
+    .header .btns .btn .btn_dorp li {
+      padding: .12rem .1rem;
+    }
+
+    .header .btns .btn .btn_dorp li a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header .btns .btn .btn_dorp {
+      background: #ffffff;
+    }
+
+    .header .btns .btn .siteimg {
+      width: .9rem !important;
+      height: auto !important;
+      opacity: .7;
+      transition: all .3s ease;
+    }
+
+    .header .btns .btn .siteimg:hover {
+      opacity: 1;
+    }
+
+    .header .btns .btn .btn_dorp {
+      width: 1.4rem;
+    }
+
+    .header .btns .btn .btn_dorp li:nth-child(4) .siteimg {
+      width: .75rem !important;
+    }
+
+    .header .btns .btn .btn_dorp li a {
+      padding-bottom: 0;
+    }
+  </style>
+    <div class="header">
+      <a class="logo" href="/">
+        <img class="white" src="picture/logo.png" alt="巴西支付系统搭建开发" loading="lazy">
+      </a>
+      <ul class="nav">
+        <li class="item">
+          <div class="icon">
+            <img class="nav_icon" src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+          </div>
+          <a class="li f_16" href="/">
+            首页
+          </a>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img class="nav_icon" src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+          </div>
+          <a class="li f_16" href="about.html">
+            关于我们
+          </a>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img class="nav_icon" src="picture/section_2_top_icon.png" alt="巴西支付" loading="lazy">
+          </div>
+          <a class="li f_16" href="BrazilPixpayment.html">
+            巴西支付
+          </a>
+          <div class="li_box">
+            <a href="BrazilPixpayment.html" class="li_box_a f_20">
+              <div class="icon_box">
+                <img class="normal" src="picture/nav_img_1.png">
+                <img class="active" src="picture/nav_img_1_active.png" alt="巴西pix支付" loading="lazy">
+              </div>
+              <span>巴西pix支付</span>
+            </a>
+            <a href="BrazilOnlineBanking.html" class="li_box_a f_20">
+              <div class="icon_box">
+                <img class="normal" src="picture/nav_img_2.png" alt="巴西网银支付" loading="lazy">
+                <img class="active" src="picture/nav_img_2_active.png" alt="巴西网银支付" loading="lazy">
+              </div>
+              <span>巴西网银支付</span>
+            </a>
+            <a href="Braziliane-wallet.html" class="li_box_a f_20">
+              <div class="icon_box">
+                <img class="normal" src="picture/nav_img_3.png" alt="巴西电子钱包支付" loading="lazy">
+                <img class="active" src="picture/nav_img_3_active.png" alt="巴西电子钱包支付" loading="lazy">
+              </div>
+              <span>巴西电子钱包支付</span>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img class="nav_icon" src="picture/section_2_top_icon.png" alt="系统优势" loading="lazy">
+          </div>
+          <a class="li f_16" href="SystemAdvantages.html">
+            系统优势
+          </a>
+          <div class="li_box">
+            <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+              <span>多通道切换</span>
+            </a>
+            <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+              <span>监控多种到账通知</span>
+            </a>
+            <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+              <span>API快速集成</span>
+            </a>
+            <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+              <span>模块化系统架构</span>
+            </a>
+            <a href="SystemAdvantages.html" class="li_box_a f_20">
+
+              <span>安全风控体系</span>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img class="nav_icon" src="picture/section_2_top_icon.png" alt="支付新闻" loading="lazy">
+          </div>
+          <a class="li f_16" href="news.html">
+            支付新闻
+          </a>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img class="nav_icon" src="picture/section_2_top_icon.png" alt="联系我们" loading="lazy">
+          </div>
+          <a class="li f_16" href="https://t.me/ukpaysys" rel="nofollow" target="_blank">
+            联系我们
+          </a>
+        </li>
+      </ul>
+    </div>
+  <div class="container">
+    <div class="banner">
+      <img class="banner_img" src="picture/af83e9b455702b99b2cb9be4a3ca886e.png" alt="支付新闻">
+      <div class="banner_content">
+        <span class="f_62">支付新闻</span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="bg">
+        <img src="picture/main_bg_1.png" alt="支付新闻" loading="lazy">
+      </div>
+      <div class="zz"></div>
+      <div id="section"></div>
+      <div class="top">
+        <div class="label f_42">
+          <div class="title f_52">
+            支付新闻
+          </div>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="top_banner_box">
+        <div class="swiper-container news_banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="top_banner">
+                <div class="top_banner_img">
+                  <img src="picture/news1.png" alt="巴西数字支付持续发展，本地支付系统建设迎来新机遇" loading="lazy">
+                </div>
+                <div class="top_banner_content">
+                  <span class="time f_18">
+                    2025-06-23
+                  </span>
+                  <span class="title f_28">
+                    巴西数字支付持续发展，本地支付系统建设迎来新机遇
+                  </span>
+                  <p class="desc f_18">
+                    近年来，随着巴西数字经济的快速发展，线上消费、跨境电商及数字金融服务持续增长，本地支付市场迎来了新的发展机遇。越来越多的企业开始重视支付系统的稳定性、安全性与本地化能力，希望通过完善的支付解决方案提升交易效率和用户支付体验。
+                  </p>
+                  <a href="news1.html" class="top_banner_more">
+                    <span class="f_16">
+                      了解详情
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="top_banner">
+                <div class="top_banner_img">
+                  <img src="picture/news2.png" alt="巴西支付市场持续升级，本地化支付系统助力企业高效运营" loading="lazy">
+                </div>
+                <div class="top_banner_content">
+                  <span class="time f_18">
+                    2025-05-07
+                  </span>
+                  <span class="title f_28">
+                    巴西支付市场持续升级，本地化支付系统助力企业高效运营
+                  </span>
+                  <p class="desc f_18">
+                    随着巴西数字支付市场不断发展，越来越多的企业开始重视本地支付系统的建设与优化。面对不断增长的线上交易需求，高效、安全、稳定的支付系统已成为企业提升运营效率和增强市场竞争力的重要支撑。
+                  </p>
+                  <a href="news2.html" class="top_banner_more">
+                    <span class="f_16">
+                      了解详情
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="top_banner">
+                <div class="top_banner_img">
+                  <img src="picture/news3.png" alt="巴西支付数字化进程加快，本地支付系统迎来全新发展机遇" loading="lazy">
+                </div>
+                <div class="top_banner_content">
+                  <span class="time f_18">
+                    2025-04-07
+                  </span>
+                  <span class="title f_28">
+                    巴西支付数字化进程加快，本地支付系统迎来全新发展机遇
+                  </span>
+                  <p class="desc f_18">
+                    随着数字经济的不断发展，巴西支付行业正加速向智能化、本地化和高效化方向迈进。越来越多的企业开始布局巴西市场，对稳定、安全、高性能的本地支付系统需求持续增长，支付技术也成为企业提升市场竞争力的重要支撑。
+                  </p>
+                  <a href="news3.html" class="top_banner_more">
+                    <span class="f_16">
+                      了解详情
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="top_banner">
+                <div class="top_banner_img">
+                  <img src="picture/news4.png" alt="企业加速布局巴西市场，本地支付系统成为数字化发展的重要支撑" loading="lazy">
+                </div>
+                <div class="top_banner_content">
+                  <span class="time f_18">
+                    2025-03-07
+                  </span>
+                  <span class="title f_28">
+                    企业加速布局巴西市场，本地支付系统成为数字化发展的重要支撑
+                  </span>
+                  <p class="desc f_18">
+                    随着巴西电子商务、跨境贸易及数字服务行业持续发展，本地支付能力正成为企业拓展市场的重要基础。越来越多的企业开始重视支付系统的建设，希望通过更加稳定、安全、高效的支付解决方案，为用户提供便捷的支付体验，同时提升平台整体运营效率。
+                  </p>
+                  <a href="news4.html" class="top_banner_more">
+                    <span class="f_16">
+                      了解详情
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <a href="news5.html" class="list_item">
+          <div class="img_box">
+            <img src="picture/news5.png" alt="巴西支付需求持续增长，智能支付系统助力企业提升运营效率" loading="lazy">
+          </div>
+          <div class="info">
+            <span class="tag f_16">
+              支付新闻
+            </span>
+            <span class="time f_18">
+              2025-02-17
+            </span>
+            <span class="title f_22">
+              巴西支付需求持续增长，智能支付系统助力企业提升运营效率
+            </span>
+            <span class="btn ">
+              <span class="f_16">探索更多</span>
+            </span>
+          </div>
+        </a>
+        <a href="news6.html" class="list_item">
+          <div class="img_box">
+            <img src="picture/news6.png" alt="巴西支付生态不断完善，本地化支付解决方案助力企业抢占市场机遇" loading="lazy">
+          </div>
+          <div class="info">
+            <span class="tag f_16">
+              支付新闻
+            </span>
+            <span class="time f_18">
+              2025-02-06
+            </span>
+            <span class="title f_22">
+              巴西支付生态不断完善，本地化支付解决方案助力企业抢占市场机遇
+            </span>
+            <span class="btn ">
+              <span class="f_16">探索更多</span>
+            </span>
+          </div>
+        </a>
+        <a href="news7.html" class="list_item">
+          <div class="img_box">
+            <img src="picture/news7.png" alt="巴西支付系统持续优化，为企业数字化运营注入新动力" loading="lazy">
+          </div>
+          <div class="info">
+            <span class="tag f_16">
+              支付新闻
+            </span>
+            <span class="time f_18">
+              2025-02-03
+            </span>
+            <span class="title f_22">
+              巴西支付系统持续优化，为企业数字化运营注入新动力
+            </span>
+            <span class="btn ">
+              <span class="f_16">探索更多</span>
+            </span>
+          </div>
+        </a>
+        <a href="news8.html" class="list_item">
+          <div class="img_box">
+            <img src="picture/news8.png" alt="巴西支付行业持续创新，本地化支付系统建设步入新阶段" loading="lazy">
+          </div>
+          <div class="info">
+            <span class="tag f_16">
+              支付新闻
+            </span>
+            <span class="time f_18">
+              2025-01-17
+            </span>
+            <span class="title f_22">
+              巴西支付行业持续创新，本地化支付系统建设步入新阶段
+            </span>
+            <span class="btn ">
+              <span class="f_16">探索更多</span>
+            </span>
+          </div>
+        </a>
+        <a href="news9.html" class="list_item">
+          <div class="img_box">
+            <img src="picture/news9.png" alt="巴西数字支付应用持续普及，本地支付系统助力企业提升竞争优势" loading="lazy">
+          </div>
+          <div class="info">
+            <span class="tag f_16">
+              支付新闻
+            </span>
+            <span class="time f_18">
+              2025-01-09
+            </span>
+            <span class="title f_22">
+              巴西数字支付应用持续普及，本地支付系统助力企业提升竞争优势
+            </span>
+            <span class="btn ">
+              <span class="f_16">探索更多</span>
+            </span>
+          </div>
+        </a>
+        <a href="news10.html" class="list_item">
+          <div class="img_box">
+            <img src="picture/news10.png" alt="巴西支付生态迈向高质量发展阶段，数字化能力持续强化" loading="lazy">
+          </div>
+          <div class="info">
+            <span class="tag f_16">
+              支付新闻
+            </span>
+            <span class="time f_18">
+              2025-01-02
+            </span>
+            <span class="title f_22">
+              巴西支付生态迈向高质量发展阶段，数字化能力持续强化
+            </span>
+            <span class="btn ">
+              <span class="f_16">探索更多</span>
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="footer">
+        <div class="f_bg">
+          <img src="picture/footer_bg_1.png" alt="巴西支付" loading="lazy">
+        </div>
+        <div class="zz"></div>
+        <div class="top">
+          <a href="" class="logo">
+            <img src="picture/logo.png" alt="巴西支付系统搭建开发" loading="lazy">
+          </a>
+        </div>
+        <hr class="line">
+        <div class="content">
+          <ul class="f_14">
+            <li>
+              <a class="f_16" href="/">
+                首页
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="about.html">
+                关于我们
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="BrazilPixpayment.html">
+                巴西支付
+              </a>
+              <a href="BrazilPixpayment.html">
+                巴西pix支付
+              </a>
+              <a href="BrazilOnlineBanking.html">
+                巴西网银支付
+              </a>
+              <a href="Braziliane-wallet.html">
+                巴西电子钱包支付
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="SystemAdvantages.html">
+                系统优势
+              </a>
+              <a href="SystemAdvantages.html">
+                多通道切换
+              </a>
+              <a href="SystemAdvantages.html">
+                监控多种到账通知
+              </a>
+              <a href="SystemAdvantages.html">
+                API快速集成
+              </a>
+              <a href="SystemAdvantages.html">
+                模块化系统架构
+              </a>
+              <a href="SystemAdvantages.html">
+                安全风控体系
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="news.html">
+                支付新闻
+              </a>
+            </li>
+            <li>
+              <a class="f_16" href="https://t.me/ukpaysys" rel="nofollow" target="_blank">
+                联系我们
+              </a>
+            </li>
+          </ul>
+          <div class="info">
+            <div class="phone">
+              <span class="label f_16">联系TG:</span>
+              <span class="value f_28">
+                @ukpaysys
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- <hr> -->
+        <div class="bottom">
+          <div class="left">
+          </div>
+          <div class="right">
+            <div class="btn">
+              <span class="f_top f_16">回到顶部</span>
+              <img src="picture/section_2_top_icon.png" alt="巴西支付">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/SmoothScroll.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+      var top1 = $(window).scrollTop()
+      // console.log(top1)
+      if (top1 < 1400) {
+        $(".banner").css("top", -(top1 * 0.8) + "px")
+      } else {
+        $(".banner").css("top", 0)
+      }
+
+      var nav_top = $(window).scrollTop()
+      console.log(nav_top)
+      if (nav_top > 900) {
+        $(".header").addClass("inner")
+      } else {
+        $(".header").removeClass("inner")
+      }
+
+      // var top1 = $(window).scrollTop()
+      // if (top1 < 1400) {
+      //   $(".banner").css("top", -(top1 * 0.2) + "px")
+      // } else {
+      //   $(".banner").css("top", 0)
+      // }
+    })
+
+    const news_banner = new Swiper('.news_banner', {
+      speed: 1500,
+      loop: true,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 20,
+      pagination: false,
+      navigation: false,
+    });
+
+    $('.container .main .top .controls .btns_1 .btn').click(function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+
+    // 1. 缓存所有需要操作的 jQuery 元素（仅查询1次 DOM，提升性能）
+    let $list = $('.container .main .list');
+    let $list2 = $('.container .main .list2');
+    let $topBannerBox = $('.container .main .top_banner_box');
+    let $btnGrop = $('.btn_grop');
+    let $btnList = $('.btn_list');
+
+
+    // 页面加载时：从localStorage读取状态并恢复（核心修复部分）
+    const gropActive = localStorage.getItem('news_btn_grop') === 'active';
+    const listActive = localStorage.getItem('news_btn_list') === 'active';
+
+    // 根据保存的状态恢复UI
+    if (gropActive || (!gropActive && !listActive)) {
+      // grop激活 或 无保存状态（默认grop）
+      $btnGrop.addClass('active');
+      $btnList.removeClass('active');
+      $topBannerBox.css('display', 'block');
+      $list.css('display', 'flex');
+      $list2.css('display', 'none');
+    } else if (listActive) {
+      // list激活
+      $btnList.addClass('active');
+      $btnGrop.removeClass('active');
+      $topBannerBox.css('display', 'none');
+      $list.css('display', 'none');
+      $list2.css('display', 'flex');
+    }
+
+    // 绑定 btn_grop 点击事件
+    $btnGrop.click(function () {
+      $btnList.removeClass('active');
+      $(this).addClass('active');
+      $topBannerBox.css('display', 'block');
+      $list.css('display', 'flex');
+      $list2.css('display', 'none');
+
+      localStorage.setItem('news_btn_grop', 'active');
+      localStorage.setItem('news_btn_list', '');
+    });
+
+    // 绑定 btn_list 点击事件
+    $btnList.click(function () {
+      $btnGrop.removeClass('active');
+      $(this).addClass('active');
+      $topBannerBox.css('display', 'none');
+      $list.css('display', 'none');
+      $list2.css('display', 'flex');
+
+      localStorage.setItem('news_btn_grop', '');
+      localStorage.setItem('news_btn_list', 'active');
+    });
+
+
+    function title_fadeInUp(element, tagElement) {
+      const observer = new observeViewport(
+        element,
+        tagElement,
+        {
+          'style.animation': 'fadeInUp 1s ease-in-out',
+        },
+        {
+          once: false,
+          threshold: 0.1, // 元素30%可见时触发
+          resetOnLeave: false, // 离开时移除属性（默认）
+        }
+      );
+    }
+    title_fadeInUp('.container .main .top_banner .top_banner_content .title', '.container .main .top_banner .top_banner_content .title')
+
+    $('.container .main .list .list_item').each(function () {
+      title_fadeInUp($(this), $(this))
+    })
+  </script>
+  <span style="display:none;"><a href="https://smalltool.github.io/">仿站</a></span>
+</body>
+
+</html>
